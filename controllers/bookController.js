@@ -1,7 +1,8 @@
 import bookService from "../services/bookService.js";
 import jwt from "jsonwebtoken";
+import {ObjectId} from "mongodb"
 
-const JWTsecret = apithebooks;
+// const JWTsecret = apithebooks;
 
 const getAllBook = async (req, res) => {
   try {
@@ -55,6 +56,7 @@ const updateBook = async (req, res) => {
       const { title, author, genre, publicationYear, isbn, price, publisher } =
         req.body;
       const book = await bookService.Update(
+        id,
         title,
         author,
         genre,

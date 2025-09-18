@@ -1,16 +1,20 @@
 import express from "express";
 const app = express ();
-import mongoose, { mongo } from "mongoose";
+// import mongoose, { mongo } from "mongoose";
+import mongoose from "./config/db-connection.js"
 
-import Books from "./models/Books.js";
+import Book from "./models/Books.js";
 
-mongoose.connect("mongodb://127.0.0.1:27017/api-thebooks")
+import bookRoutes from "./routes/bookRoutes.js";
 
-app.arguments(express.urlencoded({extended: false}));
-app.arguments(express.json());
+//mongoose.connect("mongodb://127.0.0.1:27017/api-thebooks")
+
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
+app.use("/", bookRoutes)
 
 const port = 4000
-app.Listen(port, (error) => {
+app.listen(port, (error) => {
     if (error) {
         console.log(error)
     }
