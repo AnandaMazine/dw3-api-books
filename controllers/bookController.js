@@ -67,7 +67,7 @@ const updateBook = async (req, res) => {
       );
       res.status(200).json({ book });
     } else {
-      res.sendStatus(400);
+      res.status(400).json ({ error: "A ID enviada é inválida." });
     }
   } catch (error) {
     console.log(error);
