@@ -60,7 +60,7 @@ Exemplo de resposta:
 
 ```
    {
-    "err": "Erro interno do servidor!"
+    "error": "Erro interno do servidor!"
    }
 ```
 
@@ -113,7 +113,7 @@ Exemplo de resposta:
 
 ```
     {
-      "err": "Erro interno do Servidor."
+      "error": "Erro interno do Servidor."
     }
 ```
 
@@ -140,7 +140,7 @@ Exemplo de resposta:
 
 ```
    {
-      "err": "A ID enviada é inválida."
+      "error": "A ID enviada é inválida."
    }
 ```
 
@@ -152,7 +152,7 @@ Exemplo de resposta:
 
 ```
    {
-     "err": "Erro interno do Servidor."
+     "error": "Erro interno do Servidor."
    }
 ```
 
@@ -224,7 +224,7 @@ Exemplo de resposta:
 
 ```
    {
-      "err": "A ID enviada é inválida."
+      "error": "A ID enviada é inválida."
    }
 ```
 
@@ -236,7 +236,7 @@ Exemplo de resposta:
 
 ```
   {
-     "err": "Erro interno do Servidor."
+     "error": "Erro interno do Servidor."
    }
 ```
 
@@ -281,7 +281,7 @@ Exemplo de resposta:
 
 ```
    {
-      "err": "Livro não encontrado!"
+      "error": "Livro não encontrado!"
    }
 ```
 
@@ -293,7 +293,7 @@ Exemplo de resposta:
 
 ```
   {
-     "err": "ID inválido!"
+     "error": "ID inválido!"
   }
 ```
 
@@ -304,7 +304,7 @@ Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
 Exemplo de resposta:
 ```
    {
-     "err": "Erro interno do Servidor!"
+     "error": "Erro interno do Servidor!"
    }
 ```
 
@@ -345,7 +345,7 @@ Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
 Exemplo de resposta:
 ```
 {
-  "err": Erro interno do servidor."
+  "error": Erro interno do servidor."
 }
 ```
 
@@ -383,6 +383,6 @@ Caso essa resposta aconteça, significa que o usuário não é válido.
 Exemplo de resposta:
 ```
 {
-   "err": "Token inválido."
+   "error": "Token inválido."
 }
 ```
