@@ -11,6 +11,7 @@ const Authorization = (req, res, next) => {
         res.status(401);
         res.json({ error: "Token Inválido!" });
       } else {
+        req.token = token;
         req.LoggedUser = {
           id: data.id,
           email: data.email,
