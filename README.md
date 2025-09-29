@@ -161,14 +161,14 @@ Esse endpoint é responsável por atualizar as informações de um jogo específ
 
 #### Parâmetros:
 
-id: ID do livro a ser atualizado.
-title: Título do livro (opcional).
-author: Autor(a) do livro (opcional).
-genre: Gênero dp livro (opcional).
-publicationYear: Ano de lançamento do livro (opcional).
-isbn: Identificador numérico do livro (opcional).
-price: Preço do livro (opcional).
-publisher: Editora do livro (opcional).
+- id: ID do livro a ser atualizado.
+- title: Título do livro (opcional).
+- author: Autor(a) do livro (opcional).
+- genre: Gênero dp livro (opcional).
+- publicationYear: Ano de lançamento do livro (opcional).
+- isbn: Identificador numérico do livro (opcional).
+- price: Preço do livro (opcional).
+- publisher: Editora do livro (opcional).
 
 Exemplo de requisição:
 
@@ -317,9 +317,9 @@ Esse endpoint é responsável por cadastrar um novo usuário no banco de dados.
 
 #### Parâmetros:
 
-name: Nome do usuário.
-email: E-mail do usuário.
-password: Senha do usuário.
+- name: Nome do usuário.
+- email: E-mail do usuário.
+- password: Senha do usuário.
 
 Exemplo de requisição:
 ```
@@ -355,8 +355,8 @@ Esse endpoint é responsável por verificar se o usuário tem acesso permitido o
 
 #### Parâmetro:
 
-id: Data do ID do login
-email: Data do E-mail do usuário
+- id: Data do ID do login
+- email: Data do E-mail do usuário
 
 Exemplo de requisição:
 ```
